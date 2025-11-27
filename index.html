@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI1 – LAB D – Pogoda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <header class="header">
+    <h1>Klient pogodowy</h1>
+    <p class="subtitle">OpenWeatherMap bieżąca pogoda i prognoza 5-dniowa</p>
+  </header>
+
+  <section class="search-bar">
+    <input
+            type="text"
+            id="cityInput"
+            placeholder="Wpisz nazwę miasta, np. Szczecin…"
+    />
+    <button id="checkBtn">Search</button>
+    <!--<button id="geoBtn">Moja lokalizacja</button -->
+  </section>
+
+  <main class="content">
+    <section class="card current-card">
+      <h2>Aktualna pogoda</h2>
+      <div id="currentWeather" class="current-body">
+        <p class="placeholder">Brak danych wpisz miasto i kliknij „Search”</p>
+      </div>
+    </section>
+
+    <section class="card forecast-card">
+      <h2>Prognoza (5 dni)</h2>
+      <div id="forecastWeather" class="forecast-grid">
+        <p class="placeholder">Prognoza pojawi się tutaj</p>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
